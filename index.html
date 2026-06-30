@@ -3,83 +3,264 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio - TORA ELDOARDO EKO PUTRA</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <h1>TORA ELDOARDO EKO PUTRA</h1>
+      <div class="container">
+        <h1>TORA ELDOARDO EKO PUTRA</h1>
+        <p class="subtitle">Full-Stack Web Developer</p>
+      </div>
     </header>
 
     <main>
-      <div class="profile">
-        <img src="images/profile.jpg" alt="Profile" />
+      <div class="container">
+        <div class="profile">
+          <img src="images/profile1.jpeg" alt="Profile Tora" />
+        </div>
+
+        <section>
+          <h2>Tech Stack</h2>
+          <div class="tech-stack">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Git</span>
+            <span class="tech-tag">Railway</span>
+            <span class="tech-tag">Vercel</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Proyek Unggulan</h2>
+
+          <div class="project">
+            <h3>1. BelanjaIn – Aplikasi E-Commerce Berbasis Web</h3>
+            <p class="project-meta">
+              <em>Proyek Akhir – Celerates (Maret–Juni 2026)</em>
+            </p>
+            <p>
+              <strong>Deskripsi Singkat:</strong><br />
+              Platform e-commerce dengan fitur autentikasi pengguna, kelola
+              produk, sistem transaksi, keranjang belanja, wishlist, ulasan
+              produk, sistem voucher, loyalty points, fitur chat real-time,
+              notifikasi, dan manajemen toko.
+            </p>
+            <p><strong>Kontribusi Saya (Backend Developer):</strong></p>
+            <ul>
+              <li>
+                Mengembangkan <strong>REST API</strong> dengan 100+ endpoint
+                menggunakan Express.js dan PostgreSQL
+              </li>
+              <li>
+                Mengimplementasikan
+                <strong>Autentikasi &amp; Otorisasi berbasis JWT</strong> dengan
+                3 peran (pembeli, penjual, dan admin)
+              </li>
+              <li>
+                Merancang skema basis data relasional dengan
+                <strong>22 tabel</strong> yang saling terhubung
+              </li>
+              <li>
+                Mengintegrasikan backend dengan frontend React melalui REST API
+              </li>
+              <li>
+                Melakukan deployment backend di <strong>Railway</strong> dan
+                frontend di <strong>Vercel</strong>
+              </li>
+            </ul>
+            <p><strong>Struktur Database (22 Tabel Relasional):</strong></p>
+            <ul class="database-list">
+              <li>
+                <code>pengguna</code> - Manajemen user dengan role
+                (pembeli/penjual/admin)
+              </li>
+              <li><code>toko</code> - Manajemen toko untuk penjual</li>
+              <li>
+                <code>produk</code> - Data produk dengan stok, harga, rating
+              </li>
+              <li><code>kategori</code> - Kategorisasi produk</li>
+              <li><code>product_images</code> - Multiple gambar per produk</li>
+              <li><code>keranjang</code> - Shopping cart user</li>
+              <li><code>pesanan</code> - Manajemen order/transaksi</li>
+              <li><code>item_pesanan</code> - Detail item dalam pesanan</li>
+              <li><code>alamat</code> - Alamat pengiriman user</li>
+              <li><code>voucher</code> - Manajemen diskon dan promo</li>
+              <li>
+                <code>ulasan</code> - Review &amp; rating produk oleh pembeli
+              </li>
+              <li><code>wishlist</code> - Daftar wishlist user</li>
+              <li><code>laporan</code> - Sistem pelaporan konten</li>
+              <li><code>notifikasi</code> - Notifikasi real-time user</li>
+              <li><code>chat_messages</code> - Fitur chat antar pengguna</li>
+              <li><code>follow_toko</code> - Follow toko favorit</li>
+              <li><code>payments_komerce</code> - Integrasi payment gateway</li>
+              <li><code>transaksi</code> - Riwayat pembayaran</li>
+              <li>
+                <code>saldo</code> &amp; <code>saldo_history</code> - Sistem
+                saldo/dompet digital
+              </li>
+              <li><code>loyalty_points</code> - Sistem poin loyalitas</li>
+              <li><code>search_history</code> - Riwayat pencarian user</li>
+              <li><code>blogs</code> - Manajemen konten/blog</li>
+              <li><code>settings</code> - Pengaturan sistem</li>
+            </ul>
+            <p>
+              <strong>Teknologi:</strong> Node.js, Express.js, PostgreSQL, JWT,
+              Railway, Vercel, Postman, Git
+            </p>
+            <p>
+              <strong>Link:</strong>
+              <a href="https://belanjain.vercel.app/" target="_blank"
+                >BelanjaIn Website</a
+              >
+              |
+              <a
+                href="https://github.com/galactossa/belanjain-backend"
+                target="_blank"
+                >Backend Repository</a
+              >
+              |
+              <a
+                href="https://github.com/galactossa/belanjain-frontend"
+                target="_blank"
+                >Frontend Repository</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>2. Sistem Manajemen Penjualan Online</h3>
+            <p class="project-meta"><em>Proyek Akademik (2024)</em></p>
+            <p>
+              <strong>Deskripsi Singkat:</strong><br />
+              Sistem penjualan online berbasis web untuk mengelola produk,
+              kategori, dan transaksi.
+            </p>
+            <p><strong>Kontribusi Saya:</strong></p>
+            <ul>
+              <li>
+                Membangun sistem CRUD (Tambah, Baca, Ubah, Hapus) untuk data
+                produk
+              </li>
+              <li>
+                Mengimplementasikan fitur pencarian dan filter menggunakan query
+                SQL
+              </li>
+              <li>
+                Merancang basis data MySQL dengan 4 tabel (produk, kategori,
+                transaksi, pengguna)
+              </li>
+              <li>
+                Melakukan debugging dan pengujian fungsionalitas sistem secara
+                menyeluruh
+              </li>
+              <li>Mengintegrasikan backend PHP dengan frontend HTML/CSS</li>
+            </ul>
+            <p><strong>Teknologi:</strong> PHP, MySQL, HTML, CSS</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Pengalaman Profesional</h2>
+
+          <div class="experience">
+            <h3>Backend Developer (Program Studi Independen)</h3>
+            <p class="project-meta"><em>Celerates (Maret–Juni 2026)</em></p>
+            <ul>
+              <li>
+                Mengembangkan REST API dalam tim beranggotakan 7 orang
+                menggunakan metode Agile (Scrum)
+              </li>
+              <li>
+                Berkolaborasi dengan tim Frontend dan UI/UX Designer dalam
+                pengembangan produk e-commerce
+              </li>
+              <li>
+                Mengelola version control menggunakan Git/GitHub dan menguji API
+                dengan Postman
+              </li>
+              <li>
+                Meraih nilai akhir <strong>94.03/100 (Grade A)</strong> dalam
+                program CAMP Batch 4
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience">
+            <h3>IT Support (PKL)</h3>
+            <p class="project-meta"><em>Rumah Sakit IMC Bintaro (2022)</em></p>
+            <ul>
+              <li>
+                Memberikan dukungan teknis perangkat keras dan lunak untuk
+                lingkungan operasional rumah sakit IMC Bintaro
+              </li>
+            </ul>
+            <p class="note">
+              <em>*Dicantumkan singkat karena tidak menjadi fokus utama</em>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Pendidikan</h2>
+          <div class="education">
+            <h3>S1 Teknik Informatika</h3>
+            <p class="project-meta">
+              Institut Teknologi Indonesia (2023–sekarang)
+            </p>
+            <p>IPK: 3,36</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Minat &amp; Fokus Pengembangan</h2>
+          <ol class="interests">
+            <li>
+              <strong>Full-Stack Web Development</strong> – Tertarik dalam
+              pengembangan aplikasi web secara menyeluruh, baik dari sisi
+              frontend (antarmuka pengguna) maupun backend (logika bisnis dan
+              server), serta mampu mengintegrasikan keduanya menjadi satu
+              kesatuan aplikasi yang utuh dan fungsional.
+            </li>
+            <li>
+              <strong>Backend Development</strong> – Membangun REST API yang
+              skalabel, aman, dan efisien dengan arsitektur yang terstruktur
+            </li>
+            <li>
+              <strong>Database Management</strong> – Merancang skema database
+              relasional yang kompleks dan terstruktur dengan performa optimal
+            </li>
+          </ol>
+        </section>
       </div>
-
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya adalah mahasiswa Teknik Informatika di Institut Teknologi Indonesia
-        dengan minat pada pengembangan web dan sistem basis data. Saya telah
-        mengerjakan beberapa proyek akademik seperti sistem informasi penjualan
-        cat online dan website CRUD menggunakan PHP dan MySQL. Saat ini saya
-        terus mengembangkan kemampuan di bidang full-stack web development,
-        database management, dan pengembangan aplikasi. Saya sedang mencari
-        kesempatan magang untuk menerapkan kemampuan yang saya miliki,
-        mendapatkan pengalaman nyata di dunia kerja, serta berkontribusi dalam
-        pengembangan solusi teknologi.
-      </p>
-
-      <h2>Pengalaman</h2>
-      <h3>1. Proyek Membuat Website Penjualan Cat Online</h3>
-      <ul>
-        <li>Mengembangkan backend menggunakan PHP</li>
-        <li>Membuat sistem database menggunakan MySQL</li>
-        <li>Membuat fitur CRUD</li>
-        <li>Mengintegrasikan backend dengan frontend</li>
-      </ul>
-
-      <h3>2. IT Support Intern (Praktik Kerja Lapangan)</h3>
-      <ul>
-        <li>
-          Melakukan instal ulang sistem operasi komputer dan troubleshooting
-          perangkat
-        </li>
-        <li>Merakit dan melakukan perawatan CPU</li>
-        <li>Membantu instalasi dan konfigurasi CCTV</li>
-        <li>Melakukan instalasi kabel telepon dan jaringan</li>
-        <li>
-          Mempelajari crimping kabel LAN dan dasar-dasar jaringan komputer
-        </li>
-      </ul>
-
-      <h2>Kontak</h2>
-      <p>Phone: +62 818-0781-9790</p>
-      <p>Email: toraeld8@gmail.com</p>
-      <p>
-        LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/tora-eldoardo-eko-putra"
-          target="_blank"
-        >
-          linkedin.com/in/tora-eldoardo-eko-putra
-        </a>
-      </p>
-
-      <h3>Kirim Pesan</h3>
-      <form>
-        <label>Nama</label>
-        <input type="text" placeholder="Nama Anda" />
-
-        <label>Email</label>
-        <input type="email" placeholder="Email Anda" />
-
-        <label>Pesan</label>
-        <textarea placeholder="Tulis pesan Anda"></textarea>
-
-        <button type="reset">Reset</button>
-        <button type="submit">Kirim</button>
-      </form>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-contact">
+          <span>Tangerang Selatan</span>
+          <span>0818-0781-9790</span>
+          <span>toraeld8@gmail.com</span>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/tora-eldoardo-eko-putra"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/galactossa" target="_blank">GitHub</a>
+        </div>
+        <p>&copy; 2026 TORA ELDOARDO EKO PUTRA. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
